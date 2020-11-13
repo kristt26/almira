@@ -42,6 +42,10 @@ Options All -Indexes
     # can be sent to index.php, and everything works as normal.
     ErrorDocument 404 index.php
 </IfModule>
+<Directory "/var/www/almira/public">
+    AllowOverride all
+    LogLevel debug
+</Directory>
 
 # Disable server signature start
     ServerSignature Off
